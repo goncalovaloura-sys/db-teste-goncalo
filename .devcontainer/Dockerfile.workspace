@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
+
+USER root
+
+RUN mkdir -p /etc/vscode
+
+COPY policy.json /etc/vscode/policy.json
+
+RUN chown root:root /etc/vscode/policy.json \
+    && chmod 644 /etc/vscode/policy.json
+
+USER vscode

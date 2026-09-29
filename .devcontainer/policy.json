@@ -1,0 +1,7 @@
+{
+    "AllowedExtensions": {
+        "*": false,
+        "ms-mssql.mssql": true,
+        "ms-azuretools.vscode-docker": true
+    }
+}
